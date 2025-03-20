@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Tabelas</title>
+</head>
+<body>
+    <style>
+        .tabela1{background-color: darkmagenta;}
+        .linha-tabela2{background-color: aquamarine;}
+    </style>
+    
+    <h1>Tabelas no HTML</h1>
+    <br>
+    <table border="1px" class="tabela1">
+        <thead>
+            <tr>NOME</tr>
+            <tr>TEL</tr>
+            <tr>E-MAIL</tr>
+        </thead>
+
+        <!--<tbody>-->
+
+            <tr>
+            <td>Andrei</td>
+            <td>(75) 9999-9999</td>
+            <td>andreiratonix@gmail.com</td>
+            </tr>
+
+            <tr>
+            <td>Mario</td>
+            <td>(75) 9999-9999</td>
+            <td>mariobross@gmail.com</td>
+            </tr>
+
+            <tr>
+                <td>Paul Menez</td>
+                <td>(41) 8199-9999</td>
+                <td>paul@gmail.com</td>
+            </tr>
+
+        <!--</tbody>-->
+
+    </table>
+    <h2>Tabela de Profissões</h2>
+
+    <table border="1" width="400px" class="tabela2">
+        <tr class="linha-tabela2">
+        <td>Cargo</td>
+        <td>Salário</td>
+        <td>Qualificação</td>
+        </tr>
+
+        <tr>
+            <td>Desenvolvedor de jogos</td>
+            <td>R$: 7000,00</td>
+            <td>Nível Básico</td>
+        </tr>
+
+        <tr>
+            <td>Engenheiro Civil</td>
+            <td>R$: 11.296</td>
+            <td>Nível Superior</td>
+        </tr>
+
+        <tr>
+            <td>Téc em Mecânica</td>
+            <td>R$ 11.296</td>
+            <td>Nivel Técnico</td>
+        </tr>
+    </table>
+
+    <h2>Tabela de Funcionários</h2>
+
+    <table border="1" width="500px" class="tabela3">
+        <tr>
+            <th colspan="4">Tabela de Cargos e Sálarios</th>
+        </tr>
+        <tr>
+            <td align="center">Nome</td>
+            <td align="center">Cargo</td>
+            <td align="center">Empresa</td>
+            <td align="center">Status</td>
+        </tr>
+
+        <tr>
+            <td>Rato01</td>
+            <td align="center">Esgoto01</td>
+            <td align="center">Bueiro</td>
+            <td align="center"><button>Cadastrar</button></td>
+        </tr>
+
+        <tr>
+            <td>Mestre Splinters</td>
+            <td align="center">Esgoto02</td>
+            <td align="center">ReiBueiro</td>
+            <td align="center"><button>Cadastrar</button></td>
+        </tr>
+
+        <tr>
+            <td>Rei Splinters</td>
+            <td align="center">Esgoto03</td>
+            <td align="center">ReiBueiroMax</td>
+            <td align="center"><button>Cadastrar</button></td>
+        </tr>
+    </table>
+
+
+</body>
+</html>
