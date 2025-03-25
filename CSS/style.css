@@ -1,0 +1,58 @@
+/* seletores*/
+
+/*Zerar as configurações*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    /*cor do texto*/
+    color: purple;
+    /*fonte*/
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*tamhanho da fonte*/
+    font-size: 22pt;
+    /*deixar em negrito*/
+    font-weight: bold;
+    /*centralin=zar*/
+    text-align: center;
+
+    /*Respiro (Espaço) dos elementos*/
+    padding: 20px;
+}
+
+h2{
+    background-color: brown;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section{
+    margin: 15px;
+
+}
+
+
+p{
+    text-align: justify;
+    padding-top: 10px;
+}
+
+/*Rodapé*/
+footer{
+    background-color: brown;
+    margin: 15px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 5px;
+
+}
+
+h2:hover{
+    color: rgb(165, 152, 47);
+    background-color: violet;
+}
