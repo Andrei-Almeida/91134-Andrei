@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo gerais do corpo da página*/
+
+body {
+    font-family: Arial, sans-serif; /* Define a fonte*/
+    line-height: 1.5; /*Define a altura da linha*/
+}
+
+/* Estilo do cabeçalho e menu*/
+header{
+    background-color: black; /*fundo escuro*/
+    padding: 10px 0; /*Espaçamento vertical*/
+}
+
+/* Remove os marcadores da lista e centraliza os itens*/
+nav ul{
+    list-style: none; /*Remove pontos da lista*/
+    display: flex;/*Coloca os itens em linha*/
+    justify-content: center; /*Centraliza os itens*/
+}
+
+/*Estilo de cada item de menu*/
+nav ul li{
+    position: relative; /*Necessário para o dropwon*/
+    margin: 0 10px; /* Espaçamento entre os itens*/
+}
+
+/*Estilo dos link do menu*/
+nav ul li a{
+    color: white; /*Cor do texto*/
+    text-decoration: none; /*Remove o sublinhado*/
+    padding: 10px;/*Espaçamento interno*/
+    display: block; /*Ocupa toda a área do link*/
+}
+
+/*Cor de fundo ao passar o mouse nos links*/
+nav ul li a:hover {
+    background-color: #444; /*Fundo escuro ao passar o mouse*/
+    border-radius: 5px; /*Bordas arredondadas*/
+}
+
+/*Estilo do dropdown (sub-menu)*/
+.dropdown-content {
+    display: none; /*Esconde o dropdown por padrão*/
+    position: absolute; /*Posiciona o dropdown*/
+    background-color: #444; /*Findo do dropdown*/
+    top: 100%; /*Alinha abaixo do item pai*/
+    left: 0; /*Alinha à esquerda do item pai*/
+    min-width: 150px; /*Largura mínima do dropdown*/
+    z-index; /*Garante que o dropdown apareça sobre o conteúdo*/
+}
+
+/* Estilo dos itens do dropdown*/
+.dropdown-content li {
+    margin 0; /*Remove margens extras*/
+}

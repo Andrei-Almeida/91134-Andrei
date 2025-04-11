@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Moderna e Larga</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculadora">
+    <input type="text" class="tela" id="tela" disabled>
+    <div class="botoes">
+      <button onclick="limpar()" class="limpar">C</button>
+      <button onclick="adicionarValor('/')">/</button>
+      <button onclick="adicionarValor('*')">*</button>
+      <button onclick="adicionarValor('-')" class="operador">-</button>
+
+      <button onclick="adicionarValor('7')">7</button>
+      <button onclick="adicionarValor('8')">8</button>
+      <button onclick="adicionarValor('9')">9</button>
+      <button onclick="adicionarValor('+')" class="operador">+</button>
+
+      <button onclick="adicionarValor('4')">4</button>
+      <button onclick="adicionarValor('5')">5</button>
+      <button onclick="adicionarValor('6')">6</button>
+      <button onclick="calcular()" class="igual">=</button>
+
+      <button onclick="adicionarValor('1')">1</button>
+      <button onclick="adicionarValor('2')">2</button>
+      <button onclick="adicionarValor('3')">3</button>
+      <button onclick="adicionarValor('.')">.</button>
+
+      <button onclick="adicionarValor('0')" class="zero">0</button>
+    </div>
+  </div>
+
+  <script>
+    const tela = document.getElementById('tela');
+
+    function adicionarValor(valor) {
+      tela.value += valor;
+    }
+
+    function limpar() {
+      tela.value = '';
+    }
+
+    function calcular() {
+      try {
+        const resultado = eval(tela.value);
+        if (resultado === Infinity || resultado === -Infinity) {
+          tela.value = 'Não é possível dividir por zero';
+        } else if (isNaN(resultado)) {
+          tela.value = 'Erro';
+        } else {
+          tela.value = resultado;
+        }
+      } catch (e) {
+        tela.value = 'Erro';
+      }
+    }
+  </script>
+</body>
+</html>
